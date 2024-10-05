@@ -6,15 +6,15 @@ export default function Home() {
       <div className="max-w-4xl">
         <Card>
           <CardBody>
-            <div className="flex justify-center items-center">
-              <div className="w-1/3 p-10">
+            <div className="flex flex-col justify-center items-center lg:flex-row">
+              <div className="w-full lg:w-1/3 p-6 flex justify-center">
                 <img
-                  className="rounded-full border-primary-600 border-2"
+                  className="rounded-full border-primary-600 border-2 max-w-[250px] w-full"
                   src="/dp.jpg"
                   alt="BM Monjur Morshed's Picture"
                 />
               </div>
-              <div className="w-2/3 flex flex-col gap-3">
+              <div className="w-full lg:w-2/3 flex flex-col gap-3 p-6">
                 <h4>Hello There, </h4>
                 <h1 className="text-4xl font-medium">
                   I'm BM Monjur <span className="font-black">Morshed</span>
