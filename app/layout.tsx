@@ -11,8 +11,8 @@ import { Navbar } from "@/components/navbar";
 
 export const metadata: Metadata = {
   title: {
-    default: siteConfig.name,
-    template: `%s - ${siteConfig.name}`,
+    default: siteConfig.name.full,
+    template: `%s - ${siteConfig.name.full}`,
   },
   description: siteConfig.description,
   icons: {
