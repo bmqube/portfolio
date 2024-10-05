@@ -51,11 +51,13 @@ export default function RootLayout({
               <Link
                 isExternal
                 className="flex items-center gap-1 text-current"
-                href="https://nextui-docs-v2.vercel.app?utm_source=next-app-template"
+                href="https://github.com/bmqube/portfolio"
                 title="nextui.org homepage"
               >
-                <span className="text-default-600">Powered by</span>
-                <p className="text-primary">NextUI</p>
+                <span className="text-default-400">
+                  Source Code Available @{" "}
+                  <span className="text-primary-300">GitHub</span>
+                </span>
               </Link>
             </footer>
           </div>
