@@ -1,9 +1,9 @@
 "use client";
-import { TrophyIcon } from "@/components/icons";
-import { ListboxWrapper } from "@/components/ListboxWrapper";
+import { GithubIcon, TrophyIcon } from "@/components/icons";
 import { siteConfig } from "@/config/site";
 import { Accordion, AccordionItem } from "@nextui-org/accordion";
 import { Card, CardBody } from "@nextui-org/card";
+import { LinkIcon } from "@nextui-org/link";
 import { Listbox, ListboxItem } from "@nextui-org/listbox";
 import Link from "next/link";
 
@@ -16,16 +16,16 @@ export default function Home() {
             <div className="flex flex-col justify-center items-center lg:flex-row">
               <div className="w-full lg:w-1/3 p-6 flex justify-center">
                 <img
-                  className="rounded-full border-primary-600 border-2 max-w-[250px] w-full"
+                  className="rounded-full border-teal-600 border-2 max-w-[250px] w-full"
                   src="/dp.jpg"
                   alt={`${siteConfig.name.full}'s profile picture`}
                 />
               </div>
               <div className="w-full lg:w-2/3 flex flex-col gap-3 p-6">
-                <h4>Hello There, </h4>
+                <h3 className="font-bold">Hello There, I'm</h3>
                 <h1 className="text-4xl font-medium">
-                  I'm {siteConfig.name.first}{" "}
-                  <span className="font-black">{siteConfig.name.last}</span>
+                  {siteConfig.name.first}{" "}
+                  <span className="font-black ">{siteConfig.name.last}</span>
                 </h1>
                 <h3 className="text-2xl font-medium">
                   {siteConfig.designation} @{" "}
@@ -35,7 +35,42 @@ export default function Home() {
                     </span>
                   </a>
                 </h3>
-                <p className="text-lg">{siteConfig.about}</p>
+                <p className="dark:text-gray-400 text-gray-600">
+                  {siteConfig.about}
+                </p>
+                <div className="flex mt-3 gap-3">
+                  <a
+                    href={siteConfig.links.github}
+                    className="flex gap-2 bg-zinc-800 p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800"
+                    target="_blank"
+                  >
+                    <GithubIcon />
+                    <span>GitHub</span>
+                  </a>
+                  <a
+                    href={siteConfig.links.linkedin}
+                    className="flex gap-2 bg-zinc-800 p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800"
+                    target="_blank"
+                  >
+                    <LinkIcon />
+                    <span>LinkedIn</span>
+                  </a>
+                  <a
+                    href={siteConfig.links.mail}
+                    className="flex gap-2 bg-zinc-800 p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800"
+                  >
+                    <LinkIcon />
+                    <span>Email</span>
+                  </a>
+                  <a
+                    href={siteConfig.links.mail}
+                    className="flex gap-2 bg-zinc-800 p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800"
+                    target="_blank"
+                  >
+                    <LinkIcon />
+                    <span>Resume</span>
+                  </a>
+                </div>
               </div>
             </div>
           </CardBody>

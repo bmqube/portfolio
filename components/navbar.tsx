@@ -31,12 +31,13 @@ export const Navbar = () => {
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
-            <p className="font-black text-lg flex gap-1">
-              {"{ BM"}
+            <p className="font-black text-lg sm:text-2xl flex gap-1">
+              <p className="dark:text-gray-500 text-gray-400">{"{"}</p>
+              {"BM"}
               <p className={`${isHovered ? "typewriter" : ""}`}>
                 {isHovered ? " Monjur Morshed" : "³"}
               </p>
-              {" }"}
+              <p className="dark:text-gray-500 text-gray-400">{"}"}</p>
             </p>
           </NextLink>
         </NavbarBrand>

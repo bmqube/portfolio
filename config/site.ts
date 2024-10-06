@@ -36,5 +36,6 @@ export const siteConfig = {
     linkedin: "https://www.linkedin.com/in/bmqube/",
     facebook: "https://www.facebook.com/bmqube",
     mail: "mailto:bmqube1@gmail.com",
+    resume: "/",
   },
 };
