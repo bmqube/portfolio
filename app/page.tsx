@@ -12,7 +12,7 @@ export default function Home() {
     <section className="flex flex-col items-center justify-center gap-4">
       <div className="max-w-4xl">
         <Card>
-          <CardBody>
+          <CardBody className="dark:bg-zinc-950">
             <div className="flex flex-col justify-center items-center lg:flex-row">
               <div className="w-full lg:w-1/3 p-6 flex justify-center">
                 <img
@@ -41,7 +41,7 @@ export default function Home() {
                 <div className="flex mt-3 gap-3">
                   <a
                     href={siteConfig.links.github}
-                    className="flex gap-2 bg-zinc-800 p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800"
+                    className="flex gap-2 bg-zinc-100 dark:bg-zinc-800 p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800"
                     target="_blank"
                   >
                     <GithubIcon />
@@ -49,7 +49,7 @@ export default function Home() {
                   </a>
                   <a
                     href={siteConfig.links.linkedin}
-                    className="flex gap-2 bg-zinc-800 p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800"
+                    className="flex gap-2 bg-zinc-100 dark:bg-zinc-800 p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800"
                     target="_blank"
                   >
                     <LinkIcon />
@@ -57,14 +57,14 @@ export default function Home() {
                   </a>
                   <a
                     href={siteConfig.links.mail}
-                    className="flex gap-2 bg-zinc-800 p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800"
+                    className="flex gap-2 bg-zinc-100 dark:bg-zinc-800 p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800"
                   >
                     <LinkIcon />
                     <span>Email</span>
                   </a>
                   <a
                     href={siteConfig.links.mail}
-                    className="flex gap-2 bg-zinc-800 p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800"
+                    className="flex gap-2 bg-zinc-100 dark:bg-zinc-800 p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800"
                     target="_blank"
                   >
                     <LinkIcon />
@@ -142,7 +142,7 @@ export default function Home() {
         </div>
 
         <Card>
-          <CardBody className="p-6 flex flex-col gap-5">
+          <CardBody className="p-6 flex flex-col gap-5 dark:bg-zinc-950">
             {siteConfig.achievements.map((achievement, index) => (
               <p className="border-b-1 border-b-default-300 pb-3" key={index}>
                 {achievement}
