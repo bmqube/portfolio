@@ -61,7 +61,7 @@ export const AboutMe = () => {
                 <span>Email</span>
               </a>
               <a
-                href={siteConfig.links.mail}
+                href={siteConfig.links.resume}
                 className="flex gap-2 bg-zinc-100 dark:bg-zinc-800 p-2 rounded-lg hover:bg-zinc-200 dark:hover:bg-zinc-700"
                 target="_blank"
               >
