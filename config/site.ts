@@ -17,17 +17,21 @@ export const siteConfig = {
   experiences: [
     {
       company: "FringeCore_",
+      location: "Gulshan 2, Dhaka",
       role: "Software Engineer",
       duration: "February 2024 - Present",
       image: "/fringecore.jpg",
-      description: "Make beautiful websites regardless of your design experience.",
+      description: "Make beautiful websites regardless of your design experience.Make beautiful websites regardless of your design experience.Make beautiful websites regardless of your design experience.",
+      tags: ["TypeScript", "tRPC", "PostgreSQL", "Docker"],
     },
     {
       company: "ShodaiMama",
+      location: "Banasree, Dhaka",
       role: "Jr. Software Engineer",
       duration: "June 2021 - January 2022",
       image: "/shodaimama.png",
       description: "Make beautiful websites regardless of your design experience.",
+      tags: ["Node.js", "MongoDB"],
     },
   ],
   achievements: [

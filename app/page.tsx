@@ -31,17 +31,21 @@ export default function Home() {
             <p className="font-black">Experiences</p>
           </div>
 
-          {siteConfig.experiences.map((experience, index) => (
-            <ExperienceCard
-              key={index}
-              index={index + 1}
-              company={experience.company}
-              role={experience.role}
-              duration={experience.duration}
-              image={experience.image}
-              description={experience.description}
-            />
-          ))}
+          <div className="flex flex-col md:flex-row justify-between gap-5 md:gap-10">
+            {siteConfig.experiences.map((experience, index) => (
+              <ExperienceCard
+                key={index}
+                index={index + 1}
+                company={experience.company}
+                role={experience.role}
+                duration={experience.duration}
+                image={experience.image}
+                location={experience.location}
+                description={experience.description}
+                tags={experience.tags}
+              />
+            ))}
+          </div>
         </div>
 
         <div ref={achievementsRef} className="hidden fade-in">
