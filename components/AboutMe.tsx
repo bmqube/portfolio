@@ -1,18 +1,17 @@
 "use client";
 import {
-  DownloadIcon,
+  FacebookIcon,
   GithubIcon,
   LinkedInIcon,
   MailIcon,
 } from "@/components/icons";
 import { siteConfig } from "@/config/site";
 import { Card, CardBody } from "@nextui-org/card";
-import { LinkIcon } from "@nextui-org/link";
 
 export const AboutMe = () => {
   return (
     <Card className="fade-in">
-      <CardBody className="bg-white dark:bg-black">
+      <CardBody className="bg-white dark:bg-zinc-950">
         <div className="flex flex-col justify-center items-center lg:flex-row">
           <div className="w-full lg:w-1/3 p-6 flex justify-center">
             <img
@@ -43,7 +42,7 @@ export const AboutMe = () => {
                 target="_blank"
               >
                 <GithubIcon />
-                <span>GitHub</span>
+                <span className="hidden sm:block">GitHub</span>
               </a>
               <a
                 href={siteConfig.links.linkedin}
@@ -51,22 +50,22 @@ export const AboutMe = () => {
                 target="_blank"
               >
                 <LinkedInIcon />
-                <span>LinkedIn</span>
+                <span className="hidden sm:block">LinkedIn</span>
+              </a>
+              <a
+                href={siteConfig.links.facebook}
+                className="flex gap-2 bg-zinc-100 dark:bg-zinc-800 p-2 rounded-lg hover:bg-zinc-200 dark:hover:bg-zinc-700"
+                target="_blank"
+              >
+                <FacebookIcon />
+                <span className="hidden sm:block">Facebook</span>
               </a>
               <a
                 href={siteConfig.links.mail}
                 className="flex gap-2 bg-zinc-100 dark:bg-zinc-800 p-2 rounded-lg hover:bg-zinc-200 dark:hover:bg-zinc-700"
               >
                 <MailIcon />
-                <span>Email</span>
-              </a>
-              <a
-                href={siteConfig.links.resume}
-                className="flex gap-2 bg-zinc-100 dark:bg-zinc-800 p-2 rounded-lg hover:bg-zinc-200 dark:hover:bg-zinc-700"
-                target="_blank"
-              >
-                <DownloadIcon />
-                <span>Resume</span>
+                <span className="hidden sm:block">Email</span>
               </a>
             </div>
           </div>

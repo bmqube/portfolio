@@ -26,7 +26,7 @@ export const ExperienceCard = (props: ExperienceCardProps) => {
         <div className="flex gap-5 items-center">
           <img
             alt={props.company}
-            className="rounded-lg w-40"
+            className="rounded-lg w-40 hidden sm:block"
             src={props.image}
           />
           <div className="flex flex-col gap-2">
