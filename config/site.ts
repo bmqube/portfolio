@@ -14,6 +14,22 @@ export const siteConfig = {
     name: "FringeCore_",
     url: "https://fringecore.sh",
   },
+  experiences: [
+    {
+      company: "FringeCore_",
+      role: "Software Engineer",
+      duration: "February 2024 - Present",
+      image: "/fringecore.jpg",
+      description: "Make beautiful websites regardless of your design experience.",
+    },
+    {
+      company: "ShodaiMama",
+      role: "Jr. Software Engineer",
+      duration: "June 2021 - January 2022",
+      image: "/shodaimama.png",
+      description: "Make beautiful websites regardless of your design experience.",
+    },
+  ],
   achievements: [
     "ICPC Asia West Continent Finalist 2023",
     "2nd Runner Up, CoU IUPC 2023",

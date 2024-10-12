@@ -56,7 +56,9 @@ export default function RootLayout({
               >
                 <span className="text-default-400">
                   Source Code Available @{" "}
-                  <span className="text-primary-300">GitHub</span>
+                  <span className="text-primary-600 dark:text-primary-200">
+                    GitHub
+                  </span>
                 </span>
               </Link>
             </footer>
