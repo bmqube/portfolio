@@ -31,7 +31,7 @@ export default function Home() {
             <p className="font-black">Experiences</p>
           </div>
 
-          <div className="flex flex-col md:flex-row justify-between gap-5 md:gap-10">
+          <div className="flex flex-col justify-between gap-5">
             {siteConfig.experiences.map((experience, index) => (
               <ExperienceCard
                 key={index}
