@@ -22,11 +22,11 @@ export const Navbar = () => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <NextUINavbar maxWidth="lg" position="sticky" isBordered>
+    <NextUINavbar className="px-0" maxWidth="lg" position="sticky" isBordered>
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
-        <NavbarBrand as="li" className="gap-3 max-w-fit">
+        <NavbarBrand as="li" className="max-w-fit">
           <NextLink
-            className="flex justify-start items-center gap-1 p-4"
+            className="flex justify-start items-center sm:p-4"
             href="/"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
