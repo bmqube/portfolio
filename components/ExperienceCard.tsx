@@ -25,7 +25,7 @@ export const ExperienceCard = (props: ExperienceCardProps) => {
   }, 1000 * props.index);
 
   return (
-    <Card ref={ref} className="w-full hidden fade-in">
+    <Card ref={ref} className="w-full hidden fade-in bg-white dark:bg-zinc-950">
       <div>
         <CardBody className="hidden md:block">
           <div className="flex gap-5 items-center">
@@ -54,7 +54,6 @@ export const ExperienceCard = (props: ExperienceCardProps) => {
             </div>
           </div>
         </CardBody>
-        <Divider />
       </div>
       <div className="md:hidden">
         <CardHeader className="flex gap-3">
@@ -77,11 +76,11 @@ export const ExperienceCard = (props: ExperienceCardProps) => {
             </p>
           </div>
         </CardHeader>
-        <Divider />
+        {/* <Divider /> */}
         <CardBody>
           <p>{props.description}</p>
         </CardBody>
-        <Divider />
+        {/* <Divider /> */}
         <CardFooter className="flex flex-wrap">
           {props.tags?.map((tag, index) => (
             <span
