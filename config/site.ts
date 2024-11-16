@@ -1,3 +1,5 @@
+import { BookOpen } from "lucide-react";
+
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
@@ -43,10 +45,7 @@ export const siteConfig = {
   ],
   navItems: [
     {
-      label: "About Me",
-      href: "/",
-    },
-    {
+      icon: BookOpen,
       label: "Blog",
       href: "/blog",
     },

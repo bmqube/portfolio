@@ -1,6 +1,6 @@
 "use client";
-import { AboutMe } from "@/components/AboutMe";
-import { ExperienceCard } from "@/components/ExperienceCard";
+import { AboutMe } from "@/components/archive/AboutMe";
+import { ExperienceCard } from "@/components/archive/ExperienceCard";
 import { siteConfig } from "@/config/site";
 import { Card, CardBody } from "@nextui-org/card";
 import { useRef } from "react";

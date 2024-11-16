@@ -6,6 +6,8 @@ import { Providers } from "./providers";
 
 import { fontSans } from "@/config/fonts";
 import { siteConfig } from "@/config/site";
+import { Navbar } from "@/components/navbar";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: {
@@ -40,27 +42,24 @@ export default function RootLayout({
         )}
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
-          {/* <div className="relative flex flex-col h-screen"> */}
-          {/* <Navbar /> */}
-          {/* <main className="container mx-auto max-w-7xl p-6 pt-10 flex-grow"> */}
-          {children}
-          {/* </main> */}
-          {/* <footer className="w-full flex items-center justify-center py-3">
-            <Link
-              isExternal
-              className="flex items-center gap-1 text-current"
-              href="https://github.com/bmqube/portfolio"
-              title="nextui.org homepage"
-            >
-              <span className="text-default-400">
-                Source Code Available @{" "}
-                <span className="text-primary-600 dark:text-primary-200">
-                  GitHub
+          <div className=" bg-gray-900 text-gray-100 min-h-full">
+            <Navbar />
+            <main className="max-w-5xl mx-auto px-6">{children}</main>
+            {/* <footer className="w-full flex items-center justify-center py-3">
+              <Link
+                className="flex items-center gap-1 text-current sticky bottom-0"
+                href="https://github.com/bmqube/portfolio"
+                title="Source Code"
+              >
+                <span className="text-default-400">
+                  Source Code Available @{" "}
+                  <span className="text-primary-600 dark:text-primary-200">
+                    GitHub
+                  </span>
                 </span>
-              </span>
-            </Link>
-          </footer> */}
-          {/* </div> */}
+              </Link>
+            </footer> */}
+          </div>
         </Providers>
       </body>
     </html>
