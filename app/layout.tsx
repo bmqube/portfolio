@@ -8,6 +8,7 @@ import { fontSans } from "@/config/fonts";
 import { siteConfig } from "@/config/site";
 import { Navbar } from "@/components/navbar";
 import Link from "next/link";
+import { schema } from "@/config/schema";
 
 export const metadata: Metadata = {
   title: {
@@ -61,6 +62,7 @@ export default function RootLayout({
             </footer> */}
           </div>
         </Providers>
+        <script type="application/ld+json">{JSON.stringify(schema)}</script>
       </body>
     </html>
   );
