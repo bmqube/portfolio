@@ -2,6 +2,8 @@ export const schema = {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "BM Monjur Morshed",
+    "image": "dp.jpg",
+    "address": "Dhaka, Bangladesh",
     "description": `
         BM Monjur Morshed is a results-driven software engineer with expertise in building scalable automation systems. He is experienced in developing full-stack solutions using TypeScript, Node.js, React.js, and PostgreSQL, and has strong skills in cloud infrastructure on AWS. He is also a competitive programmer with international recognition.
 
